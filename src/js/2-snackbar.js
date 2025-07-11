@@ -1,7 +1,8 @@
-// Описаний у документації
 import iziToast from "izitoast";
 // Додатковий імпорт стилів
 import "izitoast/dist/css/iziToast.min.css";
+import ok from '../img/icons/ok.svg';
+import error from '../img/icons/error.svg';
 
 document.querySelector('.back-link').style.display = 'block';
 
@@ -50,7 +51,7 @@ function handleSubmit(event) {
             timeout: 2000,
             messageColor: '#fff',
             iconColor: '#fff',
-            icon: 'fa-regular fa-circle-check',
+            iconUrl: ok,
             position: 'topRight',
             color: '#59a10d',
             message: `Fulfilled promise in ${delay}ms`,
@@ -59,7 +60,7 @@ function handleSubmit(event) {
             timeout: 2000,
             messageColor: '#fff',
             iconColor: '#fff',
-            icon: 'fa-regular fa-circle-xmark',
+            iconUrl: error,
             position: 'topRight',
             color: '#ef4040',
             message: `Rejected promise in ${delay}ms`,

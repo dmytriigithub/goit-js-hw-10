@@ -5,6 +5,8 @@ import iziToast from "izitoast";
 import "flatpickr/dist/flatpickr.min.css";
 import "izitoast/dist/css/iziToast.min.css";
 
+import error from '../img/icons/error.svg';
+
 document.querySelector('.back-link').style.display = 'block';
 
 const input = document.querySelector('#datetime-picker');
@@ -33,7 +35,7 @@ const options = {
                 timeout: 2000,
                 messageColor: '#fff',
                 iconColor: '#fff',
-                icon: 'fa-solid fa-circle-xmark',
+                iconUrl: error,
                 position: 'topRight',
                 color: '#ef4040',
                 message: 'Please choose a date in the future',
